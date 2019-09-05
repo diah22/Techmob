@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>sign up</title>
+    <link rel="stylesheet" href="{% static 'application/assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'application/assets/css/styles.css' %}">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Brand</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav"></ul>
+            </div>
+        </div>
+    </nav>
+    <h3 class="text-center text-primary">INSCRIPTION </h3>
+    <div class="container">
+        <form><i class="glyphicon glyphicon-user"></i>
+            <input class="form-control" type="text" placeholder="Votre nom"><i class="glyphicon glyphicon-envelope"></i>
+            <input class="form-control" type="email" placeholder="Votre Email"><i class="glyphicon glyphicon-lock"></i>
+            <input class="form-control" type="password" placeholder="Mot de passe"><i class="glyphicon glyphicon-lock"></i>
+            <input class="form-control" type="password" placeholder="Confirmer votre mot de passe">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">J'ai lu et accepte <span><span style="text-decoration: underline;">les conditions d'utilisations</span></span>
+                </label>
+            </div>
+            <button class="btn btn-default" type="button">Valider </button>
+        </form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
